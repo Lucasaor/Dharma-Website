@@ -14,7 +14,8 @@ const config = {
 			strict: false
 		}),
 		paths: {
-			base: dev ? '' : '/Dharma-Website'
+			// With custom domain, base is empty. If using github.io/Dharma-Website, change to '/Dharma-Website'
+			base: ''
 		}
 	}
 };
