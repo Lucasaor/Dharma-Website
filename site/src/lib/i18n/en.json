@@ -1,0 +1,88 @@
+{
+	"nav": {
+		"about": "About",
+		"services": "Services",
+		"results": "Results",
+		"clients": "Clients",
+		"team": "Team",
+		"contact": "Contact"
+	},
+	"hero": {
+		"tagline": "Artificial Intelligence & Analytics for Industry",
+		"subtitle": "Advanced Machine Learning, AI and DataOps solutions for the consumer goods industry",
+		"cta": "Discover our services"
+	},
+	"about": {
+		"title": "About Dharma",
+		"subtitle": "Transforming industrial operations with data and artificial intelligence",
+		"p1": "Dharma Datatech is a company based in Uberlândia, MG, Brazil, focused on the development of advanced Analytics, Machine Learning and AI-driven systems, especially for the consumer goods industry.",
+		"p2": "With over 15 years of experience in research & development, automation & robotics, and DataOps for industrial operations, Dharma is now a resident service provider for the top global players in the consumer goods segment.",
+		"highlight_years": "15+",
+		"highlight_years_label": "Years of Experience",
+		"highlight_countries": "3+",
+		"highlight_countries_label": "Countries Served",
+		"highlight_phd": "60%+",
+		"highlight_phd_label": "PhD Team Members"
+	},
+	"services": {
+		"title": "Services",
+		"subtitle": "Complete solutions for industrial digital transformation",
+		"s1_title": "ML Predictions",
+		"s1_desc": "Real-time Machine Learning predictions to improve quality, performance and safety of industrial processes.",
+		"s2_title": "Digital Twin & Soft-Sensing",
+		"s2_desc": "Digital Twin operations and soft-sensing for advanced process monitoring and optimization.",
+		"s3_title": "IT/OT Security",
+		"s3_desc": "Secure integration between factory floor networks (PLC, IoT Mesh, etc.) and cloud-based systems.",
+		"s4_title": "Enterprise AI with MCP",
+		"s4_desc": "Enterprise AI solutions integrating multi-level information systems with LLMs using MCP.",
+		"s5_title": "Predictive Maintenance",
+		"s5_desc": "AI-powered predictive maintenance models with direct integration to DMS systems.",
+		"s6_title": "Agentic AI & BI",
+		"s6_desc": "Integration of Agentic AI in Business Intelligence systems for smarter decisions.",
+		"s7_title": "Process Optimization",
+		"s7_desc": "Optimization of production processes and logistics operations with advanced simulation techniques.",
+		"s8_title": "Carbon & GHG",
+		"s8_desc": "Carbon emission reduction solutions following the GHG Protocol (Scope 1 to 3)."
+	},
+	"results": {
+		"title": "Results",
+		"subtitle": "Real impact for our clients",
+		"r1": "Over 10% OEE increase in consumer goods production lines",
+		"r2": "Changeover optimization and downtime reduction in complex production lines",
+		"r3": "Use of Simulation & Optimization to reduce material consumption",
+		"r4": "Complete visibility of all Scope 3 carbon emissions of a global logistics operation with over 10 million entries",
+		"r5": "AI-powered predictive maintenance directly integrated with DMS systems for automatic work order generation"
+	},
+	"stats": {
+		"usa_canada": "USA & Canada Projects",
+		"brazil": "Brazil Projects",
+		"global": "Global Projects"
+	},
+	"clients": {
+		"title": "Clients",
+		"subtitle": "Serving the top global players in the consumer goods industry"
+	},
+	"partners": {
+		"title": "Partners",
+		"subtitle": "Companies collaborating with us on high-impact projects"
+	},
+	"team": {
+		"title": "Team",
+		"subtitle": "Over 60% of the team holds a PhD in technology",
+		"lucas_role": "Founder — AI & ML Operations",
+		"leticia_role": "Founder — Software Development Operations",
+		"beatriz_role": "AI & ML Operations",
+		"phd": "PhD"
+	},
+	"contact": {
+		"title": "Contact",
+		"subtitle": "Get in touch with us",
+		"phone": "Phone",
+		"email": "Email",
+		"location": "Location",
+		"location_value": "Uberlândia, MG, Brazil"
+	},
+	"footer": {
+		"rights": "All rights reserved."
+	}
+}

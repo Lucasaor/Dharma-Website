@@ -1,0 +1,88 @@
+{
+	"nav": {
+		"about": "Sobre",
+		"services": "Serviços",
+		"results": "Resultados",
+		"clients": "Clientes",
+		"team": "Equipe",
+		"contact": "Contato"
+	},
+	"hero": {
+		"tagline": "Inteligência Artificial & Analytics para a Indústria",
+		"subtitle": "Soluções avançadas de Machine Learning, AI e DataOps para a indústria de bens de consumo",
+		"cta": "Conheça nossos serviços"
+	},
+	"about": {
+		"title": "Sobre a Dharma",
+		"subtitle": "Transformando operações industriais com dados e inteligência artificial",
+		"p1": "A Dharma Datatech é uma empresa sediada em Uberlândia, MG, Brasil, especializada no desenvolvimento de soluções avançadas de Analytics, Machine Learning e sistemas baseados em Inteligência Artificial, com foco especial na indústria de bens de consumo.",
+		"p2": "Com mais de 15 anos de experiência em pesquisa & desenvolvimento, automação & robótica e DataOps para operações industriais, a Dharma é hoje uma provedora residente de serviços para os maiores players globais do segmento de bens de consumo.",
+		"highlight_years": "15+",
+		"highlight_years_label": "Anos de Experiência",
+		"highlight_countries": "3+",
+		"highlight_countries_label": "Países Atendidos",
+		"highlight_phd": "60%+",
+		"highlight_phd_label": "Equipe com PhD"
+	},
+	"services": {
+		"title": "Serviços",
+		"subtitle": "Soluções completas para a transformação digital industrial",
+		"s1_title": "Predições com Machine Learning",
+		"s1_desc": "Predições em tempo real com Machine Learning para melhorar qualidade, desempenho e segurança de processos industriais.",
+		"s2_title": "Digital Twin & Soft-Sensing",
+		"s2_desc": "Operações de Digital Twin e soft-sensing para monitoramento e otimização avançada de processos.",
+		"s3_title": "Integrações seguras IT/OT",
+		"s3_desc": "Integração segura entre redes de chão de fábrica (PLC, IoT Mesh, etc.) e sistemas baseados em nuvem.",
+		"s4_title": "Enterprise AI com MCP",
+		"s4_desc": "Soluções de AI empresarial integrando sistemas de informação multinível com LLMs usando MCP.",
+		"s5_title": "Manutenção Preditiva",
+		"s5_desc": "Manutenção preditiva utilizando modelos baseados em AI com integração direta a sistemas DMS.",
+		"s6_title": "Agentic AI & BI",
+		"s6_desc": "Integração de Agentic AI em sistemas de Business Intelligence para decisões mais inteligentes.",
+		"s7_title": "Otimização de Processos",
+		"s7_desc": "Otimização de processos produtivos e operações logísticas com técnicas avançadas de simulação.",
+		"s8_title": "Carbono & GHG",
+		"s8_desc": "Soluções para redução de emissões de carbono seguindo o GHG Protocol (Escopo 1 a 3)."
+	},
+	"results": {
+		"title": "Resultados",
+		"subtitle": "Impacto real para nossos clientes",
+		"r1": "Aumento de mais de 10% no OEE em linhas de produção de bens de consumo",
+		"r2": "Otimização de changeover e redução de downtime em linhas complexas",
+		"r3": "Uso de Simulação & Otimização para redução de consumo de materiais",
+		"r4": "Visibilidade completa de todas as emissões Escopo 3 de uma operação logística global com mais de 10 milhões de registros",
+		"r5": "Manutenção preditiva com AI integrada diretamente a sistemas DMS para geração automática de ordens de serviço"
+	},
+	"stats": {
+		"usa_canada": "Projetos EUA & Canadá",
+		"brazil": "Projetos Brasil",
+		"global": "Projetos Globais"
+	},
+	"clients": {
+		"title": "Clientes",
+		"subtitle": "Atendemos os maiores players globais da indústria de bens de consumo"
+	},
+	"partners": {
+		"title": "Parceiros",
+		"subtitle": "Empresas que colaboram conosco em projetos de alto impacto"
+	},
+	"team": {
+		"title": "Equipe",
+		"subtitle": "Mais de 60% da equipe com doutorado em tecnologia",
+		"lucas_role": "Fundador — AI & ML Operations",
+		"leticia_role": "Fundadora — Software Development Operations",
+		"beatriz_role": "AI & ML Operations",
+		"phd": "PhD"
+	},
+	"contact": {
+		"title": "Contato",
+		"subtitle": "Entre em contato conosco",
+		"phone": "Telefone",
+		"email": "E-mail",
+		"location": "Localização",
+		"location_value": "Uberlândia, MG, Brasil"
+	},
+	"footer": {
+		"rights": "Todos os direitos reservados."
+	}
+}
