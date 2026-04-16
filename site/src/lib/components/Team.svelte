@@ -1,12 +1,39 @@
 <script lang="ts">
 	import { t } from '$lib/i18n';
+	import { base } from '$app/paths';
 
 	let { currentLocale }: { currentLocale: 'pt-BR' | 'en' } = $props();
 
 	const team = [
-		{ name: 'Lucas', key: 'lucas', initials: 'LA', phd: true },
-		{ name: 'Letícia', key: 'leticia', initials: 'LA', phd: false },
-		{ name: 'Beatriz', key: 'beatriz', initials: 'BM', phd: true }
+		{
+			name: 'Lucas Rodrigues',
+			key: 'lucas',
+			file: 'lucas.jpg',
+			phd: true,
+			linkedin: 'https://www.linkedin.com/in/lucasaor/'
+		},
+		{
+			name: 'Leticia Magnino',
+			key: 'leticia',
+			file: 'leticia.jpg',
+			phd: false,
+			linkedin: 'https://www.linkedin.com/in/leticiamagninof/'
+		},
+		{
+			name: 'Beatriz Granado',
+			key: 'beatriz',
+			file: 'beatriz.jpg',
+			phd: true,
+			linkedin: 'https://www.linkedin.com/in/beatrizgmarangoni/'
+		},
+		{
+			name: 'Mariana Milani',
+			key: 'mariana',
+			file: 'mariana.jpg',
+			phd: false,
+			new: true,
+			linkedin: 'https://www.linkedin.com/in/mariana-milanii/'
+		}
 	];
 </script>
 
@@ -17,18 +44,27 @@
 
 		<div class="team-grid">
 			{#each team as member, i}
-				<div class="team-card reveal" style="transition-delay: {i * 0.1}s">
+				<a
+					href={member.linkedin}
+					target="_blank"
+					rel="noopener noreferrer"
+					class="team-card reveal"
+					style="transition-delay: {i * 0.1}s"
+				>
 					<div class="avatar">
-						<span>{member.initials}</span>
+						<img src="{base}/media/people/{member.file}" alt={member.name} loading="lazy" />
 					</div>
 					<h3>
 						{member.name}
+						{#if member.new}
+							<span class="badge badge-new">{t(currentLocale, 'team.new')}</span>
+						{/if}
 						{#if member.phd}
 							<span class="badge">{t(currentLocale, 'team.phd')}</span>
 						{/if}
 					</h3>
 					<p class="role">{t(currentLocale, `team.${member.key}_role`)}</p>
-				</div>
+				</a>
 			{/each}
 		</div>
 	</div>
@@ -41,9 +77,9 @@
 
 	.team-grid {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(4, 1fr);
 		gap: 2rem;
-		max-width: 900px;
+		max-width: 1100px;
 		margin: 0 auto;
 	}
 
@@ -54,6 +90,8 @@
 		padding: 2.5rem 2rem;
 		text-align: center;
 		transition: all 0.3s ease;
+		cursor: pointer;
+		color: var(--color-text);
 	}
 
 	.team-card:hover {
@@ -66,15 +104,15 @@
 		width: 80px;
 		height: 80px;
 		border-radius: 50%;
-		background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		margin: 0 auto 1.5rem;
-		font-family: var(--font-heading);
-		font-size: 1.5rem;
-		font-weight: 600;
-		color: white;
+		overflow: hidden;
+		border: 2px solid var(--color-border);
+	}
+
+	.avatar img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
 
 	.team-card h3 {
@@ -97,12 +135,23 @@
 		letter-spacing: 0.05em;
 	}
 
+	.badge-new {
+		background: linear-gradient(135deg, var(--color-accent-light), var(--color-accent));
+	}
+
 	.role {
 		color: var(--color-text-muted);
 		font-size: 0.9rem;
 	}
 
 	@media (max-width: 768px) {
+		.team-grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			max-width: 700px;
+		}
+	}
+
+	@media (max-width: 480px) {
 		.team-grid {
 			grid-template-columns: 1fr;
 			max-width: 400px;

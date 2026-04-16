@@ -21,7 +21,7 @@
 		"highlight_years_label": "Years of Experience",
 		"highlight_countries": "3+",
 		"highlight_countries_label": "Countries Served",
-		"highlight_phd": "60%+",
+		"highlight_phd": "50%",
 		"highlight_phd_label": "PhD Team Members"
 	},
 	"services": {
@@ -68,11 +68,13 @@
 	},
 	"team": {
 		"title": "Team",
-		"subtitle": "Over 60% of the team holds a PhD in technology",
+		"subtitle": "100% post-graduate team, with 50% holding a PhD",
 		"lucas_role": "Founder — AI & ML Operations",
 		"leticia_role": "Founder — Software Development Operations",
 		"beatriz_role": "AI & ML Operations",
-		"phd": "PhD"
+		"mariana_role": "Data Scientist",
+		"phd": "PhD",
+		"new": "NEW"
 	},
 	"contact": {
 		"title": "Contact",

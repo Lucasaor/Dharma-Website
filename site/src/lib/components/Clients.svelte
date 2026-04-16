@@ -5,12 +5,14 @@
 	let { currentLocale }: { currentLocale: 'pt-BR' | 'en' } = $props();
 
 	const clients = [
-		{ name: 'Thingz', file: 'thingz-logo.png' },
-		{ name: 'Diageo', file: 'Diageo-Logo.wine.png' },
-		{ name: 'Unilever', file: 'Unilever-Logo.png' },
-		{ name: 'Wesco', file: 'wesco-brandpreferred.png' },
-		{ name: 'Kraft Heinz', file: 'heinz logo.png' },
-		{ name: 'Química Estrela', file: 'Estrela_600x600.png' }
+		{ name: 'Thingz Inc.', file: 'thingz-logo.png', url: 'https://thingz.ai' },
+		{ name: 'Diageo', file: 'Diageo-Logo.wine.png', url: 'https://www.diageo.com/' },
+		{ name: 'Unilever', file: 'Unilever-Logo.png', url: 'https://www.unilever.com/' },
+		{ name: 'Wesco', file: 'wesco-brandpreferred.png', url: 'https://www.wesco.com/us/en.html' },
+		{ name: 'Kraft-Heinz', file: 'heinz logo.png', url: 'https://www.kraftheinz.com/' },
+		{ name: 'Quimica Estrela', file: 'Estrela_600x600.png', url: 'https://quimicaestrela.com.br/' },
+		{ name: 'Namastex', file: 'nmstxvectorwhite.svg', url: 'https://namastex.ai/' },
+		{ name: 'CSM Media', url: 'https://www.instagram.com/csm.digital/' }
 	];
 </script>
 
@@ -21,13 +23,17 @@
 
 		<div class="logo-grid reveal">
 			{#each clients as client}
-				<div class="logo-card">
-					<img
-						src="{base}/media/clients/{client.file}"
-						alt={client.name}
-						loading="lazy"
-					/>
-				</div>
+				<a href={client.url} target="_blank" rel="noopener noreferrer" class="logo-card">
+					{#if client.file}
+						<img
+							src="{base}/media/clients/{client.file}"
+							alt={client.name}
+							loading="lazy"
+						/>
+					{:else}
+						<span class="logo-fallback">{client.name}</span>
+					{/if}
+				</a>
 			{/each}
 		</div>
 	</div>
@@ -40,9 +46,9 @@
 
 	.logo-grid {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(4, 1fr);
 		gap: 2rem;
-		max-width: 900px;
+		max-width: 1100px;
 		margin: 0 auto;
 	}
 
@@ -56,6 +62,7 @@
 		justify-content: center;
 		transition: all 0.3s ease;
 		min-height: 120px;
+		cursor: pointer;
 	}
 
 	.logo-card:hover {
@@ -72,13 +79,20 @@
 		transition: opacity 0.3s ease;
 	}
 
+	.logo-fallback {
+		font-size: 1rem;
+		font-weight: 600;
+		text-align: center;
+		color: var(--color-text);
+	}
+
 	.logo-card:hover img {
 		opacity: 1;
 	}
 
 	@media (max-width: 768px) {
 		.logo-grid {
-			grid-template-columns: repeat(2, 1fr);
+			grid-template-columns: repeat(2, minmax(0, 1fr));
 			gap: 1rem;
 		}
 	}

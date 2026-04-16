@@ -20,23 +20,27 @@ Dharma works with projects of:
 
 # Clients
 
-These are the main direct and indirect clients of Dharma Datatech:
-- Thingz Inc. (USA)
-- Diageo (UK/USA/BR)
-- Unilever (USA/BR)
-- Wesco (USA)
-- Kraft-Heinz (USA)
-- Quimica Estrela (BR)
+These are the main direct and indirect clients of Dharma Datatech: 
+- Thingz Inc. (USA): https://thingz.ai
+- Diageo (Global): https://www.diageo.com/
+- Unilever (Global): https://www.unilever.com/
+- Wesco (USA): https://www.wesco.com/us/en.html
+- Kraft-Heinz (USA) https://www.kraftheinz.com/
+- Quimica Estrela (BR): https://quimicaestrela.com.br/
+- Namastex (BR): https://namastex.ai/
+- CSM Media (BR): https://www.instagram.com/csm.digital/
+
+Please put their website as `onclick` elements on their cards
 
 # Projects per country:
-- USA & Canada: 6
-- Brazil: 2
-- Global: 2
+- USA & Canada: 18
+- Brazil: 20
+- Global: 10
 
 # Partners
 
 These are the companies that work together with Dharma in several projects of the mentioned clients:
-- Closed-loop automations
+- Closed-loop automations: https://closed-loop.net/
 - Gaia Tech
 - Bridge-port data solutions
 
@@ -50,11 +54,20 @@ These are the companies that work together with Dharma in several projects of th
 
 # Team
 
-All team members in Dharma are post-graduated in technology, with over 60% of the team holding a phD.
+All team members in Dharma are post-graduated in technology, with 50% of the team holding a phD degree.
 
 - Lucas Rodrigues, phD: Founder, AI & ML Operations
 - Leticia Magnino: Founder, Software Development Operations
 - Beatriz Granado, phD: AI & ML Operations
+- Mariana Milani: Data Scientist (add a "NEW" tag on her card)
+
+The team cards need to have the pictures of each one, found in `site/static/media/people`
+
+Also, add an `on-click` action to link each person to its LinkedIn page:
+- Lucas: https://www.linkedin.com/in/lucasaor/
+- Leticia: https://www.linkedin.com/in/leticiamagninof/
+- Beatriz: https://www.linkedin.com/in/beatrizgmarangoni/
+- Mariana: https://www.linkedin.com/in/mariana-milanii/
 
 # Contact info
 For contact info, add the following addresses:

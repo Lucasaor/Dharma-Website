@@ -5,9 +5,9 @@
 	let { currentLocale }: { currentLocale: 'pt-BR' | 'en' } = $props();
 
 	const stats = [
-		{ value: 6, key: 'usa_canada' },
-		{ value: 2, key: 'brazil' },
-		{ value: 2, key: 'global' }
+		{ value: 18, key: 'usa_canada' },
+		{ value: 20, key: 'brazil' },
+		{ value: 10, key: 'global' }
 	];
 
 	const results = ['r1', 'r2', 'r3', 'r4', 'r5'];
